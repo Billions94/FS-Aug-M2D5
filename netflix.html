@@ -43,8 +43,8 @@
         color: gray;
       }
 
-      .account1 {
-        
+      .myprofile {
+        border-top: 1px solid grey;
         
       }
 
@@ -52,6 +52,32 @@
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
 
+      }
+
+      .logo {
+        padding-top: 14px;
+        height: 25px;
+      }
+
+      .span {
+        color: gray;
+      }
+
+      #dropdown-menu {
+        background-color: black;
+      }
+
+      .text-align {
+        text-align: right;
+      }
+
+      .textdown {
+        text-align: bottom;
+        padding-top: 20px;
+      }
+
+      .textdown1 {
+        padding-top: 60px;
       }
 
     </style>
@@ -95,12 +121,21 @@
               <img src="avatar.png" width="25">
             </a> -->
             <div class="btn-group dropdown">
-               <img src="icon.png" width="25">
-              <button type="button" class="btn  dropdown-toggle text-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                kids <img src="avatar.png" width="25">
-              </button>
+               <img class='logo' src="icon.png">
+              <!-- <button type="button" class="btn  dropdown-toggle text-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="span">KIDS</span> <img src="avatar.png" width="25">
+              </button> -->
+              <a class="text-light nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="span">KIDS</span> <img src="kids_icon.png" width="25">
+              </a>
               <div class="dropdown-menu">
-                <!-- Dropdown menu links -->
+                <a class="dropdown-item" href="#"> <img src="avatar.png" width="25" > Alexander</a>
+                <a class="dropdown-item" href="#">Manage Profiles</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Account</a>
+                <a class="dropdown-item" href="#">Help Center</a>
+                <a class="dropdown-item" href="#">Sign out of Netflix</a>
+
               </div>
             </div>
           </form>
@@ -112,7 +147,7 @@
      <div class="container">
        <div class="row justify-content-center">
 
-           <div class='account col-9 py-4'>
+           <div class='account col-11 py-4'>
              <h3>Account</h3>
            </div>
 
@@ -129,7 +164,7 @@
             <label class='d-inline-block' for="submit">MEMBERSHIP & BILLING</label><br>
             <input type="button" id="submit" value="Cancel Membership">
           </div>
-          <div class='membershipbody col-3 py-4'>
+          <div class='membershipbody col-5 py-4'>
             <!-- <h5>MEMBERSHIP & BILLING</h5> -->
              <h6>student@strive.school</h6>
              <h6 id='password'>Password: ********</h6>
@@ -137,9 +172,9 @@
           </div>
           <div class='membershipbody col-3 py-4'>
             <!-- <h5>MEMBERSHIP & BILLING</h5> -->
-             <h6 class='text-primary'>Change account email</h6>
-             <h6 class='text-primary' id='password'>Change password</h6>
-             <h6 class='text-primary' id='password'>Change phone number</h6>
+             <h6 class='text-primary text-align'>Change account email</h6>
+             <h6 class='text-primary text-align' id='password'>Change password</h6>
+             <h6 class='text-primary text-align' id='password'>Change phone number</h6>
           </div>
 
        </div>
@@ -147,13 +182,13 @@
      <div class="container">
       <div class="row justify-content-center">
 
-        <div class='account1 col-6 py-4'>
+        <div class='account1 col-8 py-4'>
           <h6 class='text-primary'></h6>
           <h6 class='text-primary'></h6>
         </div>
           <div class='account1 col-3 py-4'>
-            <h6 class='text-primary'>Update billing info</h6>
-            <h6 class='text-primary'>Billing details</h6>
+            <h6 class='text-primary text-align'>Update billing info</h6>
+            <h6 class='text-primary text-align'>Billing details</h6>
           </div>
 
       </div>
@@ -162,13 +197,13 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class='account1 col-6 py-4'>
+        <div class='account1 col-8 py-4'>
           <h6 class='text-primary'></h6>
           <h6 class='text-primary'></h6>
         </div>
           <div class='account1 col-3 py-4'>
-            <h6 class='text-primary'>Redeem gift card or promo code</h6>
-            <h6 class='text-primary'>Where to buy gifts</h6>
+            <h6 class='text-primary text-align'>Redeem gift card or promo code</h6>
+            <h6 class='text-primary text-align'>Where to buy gifts</h6>
           </div>
 
       </div>
@@ -178,12 +213,12 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class='changeplan col-6 py-4'>
+        <div class='changeplan col-8 py-4'>
           <h6 class='text-primary'></h6>
           <h3 class='membership'>PLAN DETAILS</h3>
         </div>
           <div class='changeplan col-3 py-4'>
-            <h6 class='text-primary'>Change plan</h6>
+            <h6 class='text-primary text-align'>Change plan</h6>
           </div>
 
       </div>
@@ -192,16 +227,53 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class='changeplan col-6 py-4'>
+        <div class=' col-3 py-4'>
           <h6 class='text-primary'></h6>
-          <h3 class='membership'>PLAN DETAILS</h3>
+          <h3 class='membership'>SETTINGS</h3>
         </div>
-          <div class='set col-3 py-4'>
-            <h6 class='set'>Change plan</h6>
+          <div class='set col-5 py-4'>
+            <h6 class='text-primary'>Parental controls</h6>
+            <h6 class='text-primary'>Test participation</h6>
+            <h6 class='text-primary'>Manage download devices</h6>
+            <h6 class='text-primary'>Activate a device</h6>
+            <h6 class='text-primary'>Recent device streaming activity</h6>
+            <h6 class='text-primary'>Sign out of all devices</h6>
+          </div>
+          <div class=' col-3 py-4'>
+            <h6 class='text-primary'></h6>
+            <h3 class='membership'></h3>
           </div>
 
       </div>
     </div>
+
+     <div class="container">
+      <div class="row justify-content-center">
+
+        <div class='myprofile col-3 py-4'>
+          <h6 class='text-primary'></h6>
+          <h3 class='membership'>MY PROFILE </h3>
+        </div>
+          <div class='myprofile col-4 py-4'>
+            <img src="kids_icon.png" width="35">
+            <h6 class='text-primary textdown'>Language</h6>
+            <h6 class='text-primary'>Playback settings</h6>
+            <h6 class='text-primary'>Subtitle apprecance</h6>
+            
+          </div>
+          <div class='myprofile col-2 py-4'>
+            <h6 class='text-primary textdown1'>Viewing activity</h6>
+            <h6 class='text-primary '>Ratings</h6>
+          </div>
+          <div class='myprofile col-2 py-4'>
+            <h6 class='text-primary text-align'>Manage profiles</h6>
+            <h6 class='text-primary text-align'>Add profile email</h6>
+          </div>
+
+      </div>
+    </div>
+
+    <hr>
 
     
 
