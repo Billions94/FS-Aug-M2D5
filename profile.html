@@ -25,6 +25,7 @@ body, html {
     
     user-select: none;
     cursor: default;
+    min-height: 100vh;
 }
 html {
     font-family: sans-serif;
@@ -59,8 +60,28 @@ html {
 }
 
 
+.line{
+  background-color: rgb(48, 46, 46);
+ 
+ 
+}
 
+.container{
+  max-width: 400px;
+}
 
+section{
+  min-height: 100vh;
+  display: flex;
+}
+.container.main-container{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+input{
+  background-color:gray;
+}
 
 
 
@@ -74,13 +95,14 @@ html {
 
 
   <body>
-    <img src="/img/cover_image.png" alt="" width="65px">
+    <img src="/img/cover_image.png" alt="" width="100px">
     
 
-    <section>
-      <div class="container">
+    <section >
+
+      <div class="container main-container" >
         <h1>Edit Profile</h1>
-        <hr />
+        <hr class="line"/>
         <div class="row">
           <div class="col-3">
              <div class="strive-box">
@@ -114,12 +136,12 @@ html {
               
               <div class="row">
                 <div class="col-3"></div>
-                <div class="col-6">
-                  <hr>
+                <div class="col-9">
+                  <hr class="line">
                   <h2>Maturity Settings:</h2>
                  <div>
                   
-                   <li class="btn btn-light " >ALL MATURITY RATINGS</li>
+                   <li class="btn btn-dark " >ALL MATURITY RATINGS</li>
                   
                    <p>Show titles of <b>all maturity ratings</b> for this profile.</p>
                  </div>
@@ -133,8 +155,8 @@ html {
         <div class="container">
           <div class="row">
             <div class="col-3"></div>
-            <div class="col-6">
-               <hr>
+            <div class="col-9">
+               <hr class="line">
                <h2 class="profile-entry-header">Autoplay controls</h2>
                <div class="autoplay-option">
                 <input type="checkbox" id="nextEpisode-profile" checked="" class="btn btn-dark">
@@ -149,7 +171,7 @@ html {
         </div>
 
           
-          <hr>  
+          <hr class="line">  
         <div class="down-buttons">
           <button data-uia="profile-save-button" class="profile-button preferred-action">SAVE</button>
           <button data-uia="profile-cancel-button" class="profile-button">CANCEL</button>
