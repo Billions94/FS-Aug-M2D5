@@ -28,9 +28,10 @@
         
       }
 
-      .submit {
-        background-color: gray;
-        border: none;
+      .btn-gray {
+        background-color: #dadad4;
+        border: transparent;
+        border-radius: 0;
       }
 
       .membershipbody{
@@ -49,7 +50,7 @@
       }
 
       .changeplan {
-        border-top: 1px solid grey;
+        /* border-top: 1px solid grey; */
         border-bottom: 1px solid grey;
 
       }
@@ -78,6 +79,20 @@
 
       .textdown1 {
         padding-top: 60px;
+      }
+
+      .account1 {
+        border-bottom: 1px solid grey;
+      }
+
+     
+      hr {
+        width: 738px; margin-right:10%;
+      }
+
+      .foot {
+        max-width: 100px;
+        position: relative;
       }
 
     </style>
@@ -147,31 +162,30 @@
      <div class="container">
        <div class="row justify-content-center">
 
-           <div class='account col-11 py-4'>
+           <div class='account col-sm-11 col-md-11 col-lg-11 py-4'>
              <h3>Account</h3>
            </div>
 
        </div>
      </div>
-
-  
+ 
 
      <div class="container">
       <div class="row justify-content-center">
 
-          <div class='membership col-3 py-4'>
+          <div class='membership col-sm-11 col-md-3 col-lg-3 py-4'>
             <!-- <h5>MEMBERSHIP & BILLING</h5> -->
             <label class='d-inline-block' for="submit">MEMBERSHIP & BILLING</label><br>
-            <input type="button" id="submit" value="Cancel Membership">
+            <input type="button" class="btn btn-gray" id="submit" value="Cancel Membership">
           </div>
-          <div class='membershipbody col-5 py-4'>
+          <div class='membershipbody col-sm-11 col-md-5 col-lg-5 py-4'>
             <!-- <h5>MEMBERSHIP & BILLING</h5> -->
              <h6>student@strive.school</h6>
              <h6 id='password'>Password: ********</h6>
              <h6 id='password'>Phone: 321 044 1279</h6>
           </div>
-          <div class='membershipbody col-3 py-4'>
-            <!-- <h5>MEMBERSHIP & BILLING</h5> -->
+          <div class='membershipbody col-sm-11 col-md-3 col-lg-3 py-4'>
+            
              <h6 class='text-primary text-align'>Change account email</h6>
              <h6 class='text-primary text-align' id='password'>Change password</h6>
              <h6 class='text-primary text-align' id='password'>Change phone number</h6>
@@ -179,14 +193,16 @@
 
        </div>
      </div>
+
+<hr align='right'>     
      <div class="container">
       <div class="row justify-content-center">
 
-        <div class='account1 col-8 py-4'>
+        <!-- <div class='account1 col-8 py-4'>
           <h6 class='text-primary'></h6>
           <h6 class='text-primary'></h6>
-        </div>
-          <div class='account1 col-3 py-4'>
+        </div> -->
+          <div class='acc col-sm-11  col-lg-11 py-4'>
             <h6 class='text-primary text-align'>Update billing info</h6>
             <h6 class='text-primary text-align'>Billing details</h6>
           </div>
@@ -194,14 +210,16 @@
       </div>
     </div>
 
+<hr align='right'>
+
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class='account1 col-8 py-4'>
+        <!-- <div class='account1 col-8 py-4'>
           <h6 class='text-primary'></h6>
           <h6 class='text-primary'></h6>
-        </div>
-          <div class='account1 col-3 py-4'>
+        </div> -->
+          <div class='account1 col-sm-11  col-lg-11 py-4'>
             <h6 class='text-primary text-align'>Redeem gift card or promo code</h6>
             <h6 class='text-primary text-align'>Where to buy gifts</h6>
           </div>
@@ -213,11 +231,11 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class='changeplan col-8 py-4'>
+        <div class='changeplan col-sm-11  col-lg-8 py-4'>
           <h6 class='text-primary'></h6>
           <h3 class='membership'>PLAN DETAILS</h3>
         </div>
-          <div class='changeplan col-3 py-4'>
+          <div class='changeplan col-sm-11  col-lg-3 py-4'>
             <h6 class='text-primary text-align'>Change plan</h6>
           </div>
 
@@ -227,11 +245,11 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class=' col-3 py-4'>
+        <div class=' col-sm-11  col-lg-3 py-4'>
           <h6 class='text-primary'></h6>
           <h3 class='membership'>SETTINGS</h3>
         </div>
-          <div class='set col-5 py-4'>
+          <div class='set col-sm-11  col-lg-5 py-4'>
             <h6 class='text-primary'>Parental controls</h6>
             <h6 class='text-primary'>Test participation</h6>
             <h6 class='text-primary'>Manage download devices</h6>
@@ -239,7 +257,7 @@
             <h6 class='text-primary'>Recent device streaming activity</h6>
             <h6 class='text-primary'>Sign out of all devices</h6>
           </div>
-          <div class=' col-3 py-4'>
+          <div class=' col-sm-11  col-lg-3 py-4'>
             <h6 class='text-primary'></h6>
             <h3 class='membership'></h3>
           </div>
@@ -250,22 +268,22 @@
      <div class="container">
       <div class="row justify-content-center">
 
-        <div class='myprofile col-3 py-4'>
+        <div class='myprofile col-sm-11  col-lg-3 py-4'>
           <h6 class='text-primary'></h6>
           <h3 class='membership'>MY PROFILE </h3>
         </div>
-          <div class='myprofile col-4 py-4'>
+          <div class='myprofile col-sm-11  col-lg-4 py-4'>
             <img src="kids_icon.png" width="35">
             <h6 class='text-primary textdown'>Language</h6>
             <h6 class='text-primary'>Playback settings</h6>
             <h6 class='text-primary'>Subtitle apprecance</h6>
             
           </div>
-          <div class='myprofile col-2 py-4'>
+          <div class='myprofile col-sm-11  col-lg-2 py-4'>
             <h6 class='text-primary textdown1'>Viewing activity</h6>
             <h6 class='text-primary '>Ratings</h6>
           </div>
-          <div class='myprofile col-2 py-4'>
+          <div class='myprofile col-sm-11  col-lg-2 py-4'>
             <h6 class='text-primary text-align'>Manage profiles</h6>
             <h6 class='text-primary text-align'>Add profile email</h6>
           </div>
